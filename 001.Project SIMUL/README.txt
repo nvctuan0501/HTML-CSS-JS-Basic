@@ -1,0 +1,1 @@
+httpswww.simul.co.jpsbcfbclid=IwAR3qrukaANGK9I9N_l6dy9_-PjQ6J0GbvdaZEJZ7X7yEiZAcOEDLHhvBQ9c

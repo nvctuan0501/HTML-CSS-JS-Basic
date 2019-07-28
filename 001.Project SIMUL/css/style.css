@@ -1,0 +1,675 @@
+ul, p, body,a {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+h1, h2, h3, h4, h5, h6, p {
+    cursor: default;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-image: none;
+    list-style-position: inside;
+    list-style-type: none;
+}
+.text-center {
+    text-align: center;
+}
+
+.text-md {
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.container{
+    margin: 0px auto;
+    max-width: 100%;
+    padding : 0px  24px;
+    width: 1128px;
+    left: 0;    
+}
+.container--full{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+
+
+
+
+
+
+body {
+    background-color: rgb(248,248,248);
+    color: rgb(51,51,51);
+    font-size: 14px;
+    line-height: 1.5;
+    text-rendering: optimizeLegibility;
+    /* height: 950vh; */
+    margin: 0;
+    padding: 0;
+    border-bottom: 8px solid #ef8100 ;
+    font-family: "UD Shin Go Light","Yu Gothic Medium","游ゴシック Medium",YuGothic,"游ゴシック体","ヒラギノ角ゴ Pro W1","メイリオ","Meiryo",sans-serif;
+}
+
+.header {
+    background-color: #ffffff;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.header-global-nav__body {
+    color: #333333;
+    margin: 0px -24px 0px 0px;
+    padding: 0px 0px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px !important;
+
+}
+
+.header-action {
+    width: 22px;
+    height: 16px;
+    display: none;
+}
+
+.header-logo-pc {
+    width: 380px;
+    height: 33px;
+}
+.header-logo-sp {
+    width: 224px;
+    height: 54.81px !important;
+    display: none;
+}
+
+.header-sub-nav {
+    /* width: 335.33px; */
+    height: 46px;
+    line-height: 46px;
+    font-size: 16px;
+    /* margin: 0;
+    padding: 0; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link--arrow { 
+    color: #333333;
+    font-size: 12px;
+    margin-right: 24px;
+    padding-right: 18px;
+    text-decoration: none;
+    background: url(../img/ico_arrow-right.png) no-repeat right center;
+}
+
+.link--arrow:hover {
+    color:  #333333;
+}
+.button--secondary {
+    font-size: 16px;
+    padding: 15px 8px;
+    width: 204px;
+    background-color: #ef8100;
+    font-family: "UD Shin Go Light", "Yu Gothic Medium", "游ゴシック Medium", YuGothic, 游ゴシック体, "ヒラギノ角ゴ Pro W1", メイリオ, Meiryo, sans-serif;
+    text-align: center;
+    color: #fff;
+    display: inline-block;
+    letter-spacing: .03em;
+    line-height: 1;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    max-width: 100%;
+}
+
+.button--secondary::before {
+    background-color: #234;
+    content: '';
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0;
+    z-index: -1;
+    transition: all 0.4s;
+}
+
+.button--secondary:hover::before {
+    left: 0;
+    right: auto;
+    width: 100%;
+}
+
+.button--secondary:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.header-main-nav{
+    width: 100%;
+    padding: 0px 0px  16px;
+}
+
+.nav-list__action,
+.nav-list__action-link {
+    display: none;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+nav ul{
+    list-style: none;
+}
+
+.nav-list li {
+    list-style-image: none;
+    list-style-position: inside;
+}
+
+.nav-list li:not(:first-child) {
+    border-left: 1px solid #eee;
+}
+
+.nav-list__item {
+    text-align: center;
+    width: calc(100% / 6);
+}
+
+.main-nav-link {
+    padding: 10px;
+    color: #333;
+    display:  block;
+    font-size: 14px;
+    line-height: 1;
+    position: relative;
+    z-index: 1;
+}
+
+.main-nav-link::before {
+    content: '';
+    position: absolute;
+    background-color: #ef8100;
+    right: 0;
+    bottom: -16px;
+    width: 0;
+    height: 3px;
+    z-index: -1;
+    transition: all 0.4s;
+}
+
+.main-nav-link:hover::before {
+    left: 0;
+    right: auto;
+    width: 100%;
+}
+
+.main-nav-link:hover {
+    color: #ef8100;
+    text-decoration: none;
+    /* transition: all 4ms; */
+}
+
+.section--lg_1 {
+    padding-top: 120px;
+}
+
+.section--lg_1__noidung {
+    position: relative;
+}
+
+.section--lg_1__noidung_img {
+    width: 100%;
+    height: auto;
+    background-color: red;
+    margin-left: auto;
+    
+}
+
+.sec_1_img {
+    width: 100%;
+    height: 100%;
+}
+
+.section--lg_1__noidung_text {
+    position: absolute;
+    color: #fff;
+    left: 64px;
+    bottom: 40px;
+    font-size: 28px;
+    line-height: 50px;
+    cursor: default;
+}
+
+.section--lg_1__noidung_link { 
+    position: absolute;
+    right: 0;
+    background-color: #234;
+    padding: 19px 8px 19px 46px;
+    width: 276px;
+    color: #fff;
+    display: inline-block;
+    letter-spacing: .04em;
+    line-height: 1;
+    max-width: 100%;
+    font-size: 16px !important;
+}
+
+.section--lg_1__noidung_link:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.ico-arrow {
+    background-image: url(../img/ico_arrow-right_white.png);
+    background-repeat: no-repeat;
+    background-size: 8px 12px;
+    position: absolute;
+    right: 16px;
+    height: 12px;
+    width: 8px;
+}
+
+.section--lg_1__noidung_vuong {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background-color: #ef8100;
+    z-index: -1;
+    top: 0;
+    left: -300px;
+}
+
+/* <!-- START section--lg_grey NUMBER 0 ---> */
+.section--lg_grey {
+    /* background-color: #f6f6f6; */
+    padding-bottom: 80px
+}
+
+.banner {
+    width: 100%;
+    height: auto;
+    margin-top: 54px;
+    padding: 56px 64px;
+    background-color: #fff;
+    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.2);
+}
+
+.headline {
+    font-size: 30px;
+    color: #333333;
+    line-height: 45px;
+    font-weight: bold;
+}
+
+.banner_headline_lg {
+    margin-bottom: 32px;
+}
+
+.banner_headline_sm {
+    display: none;
+}
+
+.banner_content {
+    display: flex;
+    width: 100%;
+}
+
+.banner_head {
+    margin-bottom: 20px;
+    padding-left:  16px;
+    line-height: 28px;
+    border-left: 4px solid #ef8100 ;
+    line-height: 1;
+ }
+
+.banner-text {
+    position: relative;
+}
+
+.link-style {
+    font-size: 16px;
+    line-height: 24px;
+    color: #333 !important;
+    margin-right: 0 !important;
+}
+
+.banner-text-in p + p {
+    margin-top: 8px;
+}
+
+.banner-action {
+    margin-top: 46px;
+    text-align: center;
+}
+
+.banner-btn {
+    background-color: #223344;
+    padding: 17px 8px;
+    width: 200px;
+}
+
+.banner-btn::before {
+    background-color: #ef8100;
+}
+
+.banner_search {
+    background-image: url(../img/img_map_lg.png);
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    width: 380px;
+    border-bottom: 3px solid #ef8100;
+    padding: 20px;
+}
+
+.search-btn {
+    background-color: #ffffff;
+    color: #ef8100;
+    font-family: "UD Shin Go Regular","Yu Gothic Medium","游ゴシック Medium",YuGothic,"游ゴシック体","ヒラギノ角ゴ Pro W3","メイリオ","Meiryo",sans-serif;
+    font-size: 20px;
+    padding: 19px 54px;
+    position: relative;
+    width: 346px;
+    text-align: left;
+    font-weight: 600;
+}
+.search-btn + .search-btn  {
+    margin-top: 20px;
+}
+
+.search-btn::before {
+    background-color: #ef8100;
+}
+
+.icon-search {
+    margin-right: 46px;
+    background-image: url(../img/ico_search.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    vertical-align: middle;
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    filter: grayscale(100%);
+}
+/* <!-- END section--lg_grey NUMBER 0 ---> */
+
+/* <!-- START section--lg_grey NUMBER 1, 2, 3  ---> */
+.section-title {
+    margin-bottom: 60px;
+    width: 100%;
+    height: auto;
+}
+
+.headline_title {
+    margin: 35px auto 0;
+}
+
+.feature {
+    position: relative;
+}
+
+.feature_img {
+    height: 450px;
+    overflow: hidden;
+    position: relative;
+    width: 70%;
+}
+
+.feature_img_RIGHT {
+    margin-left: auto;
+}
+
+.feature_img img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    height: 100%;
+    width: 100%;
+}
+
+.feature_body {
+    position: absolute;
+    background-color: #fff;
+    bottom: 0;
+    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.2);
+    padding: 40px 48px;
+    right: 0;
+    width: 528px;
+}
+
+.feature_body_LEFT {
+    left: 0;
+}
+
+
+.feature_body_lead {
+    line-height: 1.5;
+    margin-bottom: 25px;
+    position: relative;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.feature_body_text {
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.feature_num {
+    position: absolute;
+    left: 50px;
+    top: 40px;
+}
+.feature_num img {
+    width: 50px;
+}
+/* <!-- END section--lg_grey NUMBER 1, 2, 3 ---> */
+
+/* <!--------------- START section-seperate--lg -----------------> */
+.section-seperate--lg {
+    margin-bottom: 200px;
+    padding: 65px 0;
+    background-color: #fff;
+}
+
+.section-title-md {
+    margin-bottom: 48px;
+    width: 100%;
+    height: auto;
+}
+.graphics--md {
+    margin-bottom: 64px;
+}
+.graphics {
+    position: relative;
+    z-index: 1;
+}
+
+.img-row-view {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.img-col-left {
+    width: 50%;
+    padding: 0 15px;
+}
+
+.img-col-left img,
+.img-col-right img {
+    width: 100%;
+}
+
+.caption {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.img-col-right {
+    width: 50%;
+    padding: 0 15px;
+}
+
+.btn-center {
+    margin: 0 auto;
+    display: block;
+}
+
+/* <!--------------- START section ----------------->*/
+.section {
+    background-color: #fff;
+
+}
+
+.content {
+    margin: 0 auto;
+    max-width: 100%;
+    width: 1128px;
+    background-color: #fff;
+    margin-bottom: 0px;
+    padding: 64px 0 0px;
+    position: relative;
+    top: -120px;
+}
+
+.news-item-ss {
+    width: 100%;
+    margin: 0 120px;
+}
+
+.news-item {
+    border-bottom: 2px solid #eee;
+    padding: 32px 0;
+    margin: 0 auto;
+
+}
+.date {
+    margin-right: 20px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+}
+.tag {
+    display: inline-block;
+    padding: 4px 16px;
+    background-color: #09c;
+    color: #fff;
+    font-weight: 600;
+}
+.news-body {
+    margin-top: 10px;
+}
+
+.news-btn {
+    margin-top: 50px;
+    width: 100%;
+}
+
+.block-btn {
+    background-color: #223344;
+    padding: 17px 8px;
+}
+
+.block-btn::before {
+    background-color: #ef8100;
+}
+/* <!--------------- END section ----------------->*/
+
+.conversion {
+    padding-bottom: 65px;
+    background-color: #fff;
+}
+.conversion-content{
+    overflow: hidden;
+    padding: 40px 24px;
+    position: relative;
+    z-index: 1;
+}
+
+.conversion-img {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+}
+
+.conversion-text {
+    color: #fff;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    padding-bottom: 16px;
+}
+
+.footer {
+    background-color: #333;
+    position: relative;
+}
+
+.footer-nav {
+    background-color: #334353;
+    padding: 32px 0;
+}
+
+.f-logo {
+    margin-bottom: 32px;
+}
+
+.f-logo img {
+    height: 22px;
+    width: 265px;
+}
+
+.f-item {
+    display: inline-block;
+    margin: 10px 16px 0 0 ;
+    padding-right: 16px;
+}
+
+.f-item:not(:last-child) {
+    border-right: 2px solid #fff;
+
+}
+
+.f-item a {
+    color: #fff;
+}
+
+.footer-copyright {
+    background-color: #234;
+    padding: 16px 0;
+    color: #fff;
+}
+
+.btn-top {
+    background: #fff url(../img/ico_arrow-up_primary.png) no-repeat center/26px 15px;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    bottom: 23px;
+    right: 23px;
+    border-radius: 50%;
+    border: 0;
+    cursor: pointer;
+
+}
