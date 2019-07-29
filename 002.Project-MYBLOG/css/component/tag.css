@@ -1,0 +1,26 @@
+.list-tag {
+  font-size: 0;
+}
+
+.tag {
+  padding: 3px 10px;
+  display: inline-block;
+  line-height: 1;
+  font-size: 16px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.tag.tag-dark {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.tag.tag-gray {
+  background-color: #f1f1f1;
+  color: #000;
+}
+
+.tag + .tag {
+  margin-left: 4px;
+}
